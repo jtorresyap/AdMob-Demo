@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D30CE48C34AB3E5C2F72B2D /* Pods_Ads_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A50629DDF74C537E10F8E47 /* Pods_Ads_Demo.framework */; };
 		DE34D03F216FEFDC00551DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34D03E216FEFDC00551DCB /* AppDelegate.swift */; };
 		DE34D041216FEFDC00551DCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34D040216FEFDC00551DCB /* ViewController.swift */; };
 		DE34D044216FEFDC00551DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE34D042216FEFDC00551DCB /* Main.storyboard */; };
 		DE34D046216FEFDD00551DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE34D045216FEFDD00551DCB /* Assets.xcassets */; };
 		DE34D049216FEFDD00551DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE34D047216FEFDD00551DCB /* LaunchScreen.storyboard */; };
+		DE34D051216FF27A00551DCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE34D050216FF27A00551DCB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A50629DDF74C537E10F8E47 /* Pods_Ads_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ads_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0AF8DF66499B2934774FC4 /* Pods-Ads Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ads Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ads Demo/Pods-Ads Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		DE34D03B216FEFDC00551DCB /* Ads Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ads Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE34D03E216FEFDC00551DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE34D040216FEFDC00551DCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		DE34D045216FEFDD00551DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE34D048216FEFDD00551DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE34D04A216FEFDD00551DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE34D050216FF27A00551DCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF7DC9C7DD90EBE0C02DC754 /* Pods-Ads Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ads Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ads Demo/Pods-Ads Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D30CE48C34AB3E5C2F72B2D /* Pods_Ads_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B26CA8F826FC66AC847B432C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A50629DDF74C537E10F8E47 /* Pods_Ads_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE34D032216FEFDC00551DCB = {
 			isa = PBXGroup;
 			children = (
 				DE34D03D216FEFDC00551DCB /* Ads Demo */,
 				DE34D03C216FEFDC00551DCB /* Products */,
+				EA12ED0003D603E745F80C16 /* Pods */,
+				B26CA8F826FC66AC847B432C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +76,19 @@
 				DE34D042216FEFDC00551DCB /* Main.storyboard */,
 				DE34D045216FEFDD00551DCB /* Assets.xcassets */,
 				DE34D047216FEFDD00551DCB /* LaunchScreen.storyboard */,
+				DE34D050216FF27A00551DCB /* GoogleService-Info.plist */,
 				DE34D04A216FEFDD00551DCB /* Info.plist */,
 			);
 			path = "Ads Demo";
+			sourceTree = "<group>";
+		};
+		EA12ED0003D603E745F80C16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC0AF8DF66499B2934774FC4 /* Pods-Ads Demo.debug.xcconfig */,
+				EF7DC9C7DD90EBE0C02DC754 /* Pods-Ads Demo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE34D04D216FEFDD00551DCB /* Build configuration list for PBXNativeTarget "Ads Demo" */;
 			buildPhases = (
+				79341770CE7F27EC3DBE2716 /* [CP] Check Pods Manifest.lock */,
 				DE34D037216FEFDC00551DCB /* Sources */,
 				DE34D038216FEFDC00551DCB /* Frameworks */,
 				DE34D039216FEFDC00551DCB /* Resources */,
+				5DCA7F19220B81422E93D5EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE34D049216FEFDD00551DCB /* LaunchScreen.storyboard in Resources */,
+				DE34D051216FF27A00551DCB /* GoogleService-Info.plist in Resources */,
 				DE34D046216FEFDD00551DCB /* Assets.xcassets in Resources */,
 				DE34D044216FEFDC00551DCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DCA7F19220B81422E93D5EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ads Demo/Pods-Ads Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ads Demo/Pods-Ads Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79341770CE7F27EC3DBE2716 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ads Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE34D037216FEFDC00551DCB /* Sources */ = {
@@ -280,6 +351,7 @@
 		};
 		DE34D04E216FEFDD00551DCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0AF8DF66499B2934774FC4 /* Pods-Ads Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		DE34D04F216FEFDD00551DCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF7DC9C7DD90EBE0C02DC754 /* Pods-Ads Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
